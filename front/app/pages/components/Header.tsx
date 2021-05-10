@@ -4,72 +4,48 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <div className="bg-blue-500">
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
-          <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-            <a href="/" className="mb-6 sm:mx-auto">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-teal-accent-400">
-                <svg
-                  className="w-10 h-10 text-purple-900"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </a>
-            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
-                <span className="relative inline-block">
-                  <svg
-                    viewBox="0 0 52 24"
-                    fill="currentColor"
-                    className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-deep-purple-accent-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                  >
-                    <defs>
-                      <pattern
-                        id="700c93bf-0068-4e32-aafe-ef5b6a647708"
-                        x="0"
-                        y="0"
-                        width=".135"
-                        height=".30"
-                      >
-                        <circle cx="1" cy="1" r=".7" />
-                      </pattern>
-                    </defs>
-                    <rect
-                      fill="url(#700c93bf-0068-4e32-aafe-ef5b6a647708)"
-                      width="52"
-                      height="24"
-                    />
-                  </svg>
-                  <span className="relative">The</span>
-                </span>{' '}
-                quick, brown fox jumps over a lazy dog
-              </h2>
-              <p className="text-base text-indigo-100 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque rem aperiam, eaque ipsa quae.
-              </p>
-            </div>
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
+        <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
+          <div className="max-w-xl mb-6">
             <div>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded shadow-md hover:text-deep-purple-900 bg-gray-300 hover:bg-purple-100 focus:shadow-outline focus:outline-none"
-              >
-                Get started
-              </a>
+              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider uppercase bg-gray-300 text-teal-900 rounded-full">Brand new</p>
             </div>
+            <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w-lg mb-6">
+              Everything you
+              <br className="hidden md:block" />
+              can imagine{' '}
+              <span className="inline-block text-deep-purple-accent-400">is real</span>
+            </h2>
+            <p className="text-gray-700 text-base md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</p>
+          </div>
+          <div className="flex items-center space-x-3">
+            <a href="/" className="w-32 transition duration-300 hover:shadow-lg">
+              <img src="https://kitwind.io/assets/kometa/app-store.png" className="object-cover object-top w-full h-auto mx-auto" alt="" />
+            </a>
+            <a href="/" className="w-32 transition duration-300 hover:shadow-lg">
+              <img src="https://kitwind.io/assets/kometa/google-play.png" className="object-cover object-top w-full h-auto mx-auto" alt="" />
+            </a>
+          </div>
+        </div>
+        <div className="flex items-center justify-center lg:w-1/2">
+          <div className="w-2/5">
+            <img className="object-cover" src="https://kitwind.io/assets/kometa/one-girl-phone.png" alt="" />
+          </div>
+          <div className="w-5/12 -ml-16 lg:-ml-32">
+            <img className="object-cover" src="https://kitwind.io/assets/kometa/two-girls-phone.png" alt="" />
           </div>
         </div>
       </div>
+      <a
+        href="/"
+        aria-label="Scroll down"
+        className="flex items-center justify-center w-10 h-10 mx-auto text-gray-600 hover:text-deep-purple-accent-400 hover:border-deep-purple-accent-400 duration-300 transform border border-gray-400 rounded-full hover:shadow hover:scale-110"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+          <path d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z" />
+        </svg>
+      </a>
     </div>
   );
 };
