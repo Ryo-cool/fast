@@ -18,6 +18,7 @@ const Apple: FC<Props> = (props) => {
   return (
     <div>
       <Nav />
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full object-center" onClick={twitter}>ここをクリック</button>
       <Header />
       <DatePicker />
       <div className="h-screen w-4/5 max-w-5xl mx-auto flex items-center justify-center flex-col">
@@ -45,6 +46,11 @@ export const getStaticProps: GetStaticProps = async context => {
       posts: json
     },
   };
+}
+
+const twitter = () => {
+  console.log("成功しました")
+  
 }
 
 export default Apple;
