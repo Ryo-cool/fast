@@ -1,19 +1,19 @@
 Post.create!(
   [
     {
-      title: 'Next.js + Ruby on Rails + Docker の環境構築'
+      title: 'デグローム'
     },
     {
-      title: 'React Hooks でカスタムフックを作る'
+      title: 'コール'
     },
     {
-      title: 'GraphQL と Apollo Client 入門'
+      title: 'カーショー'
     },
     {
-      title: '【TypeScript4.3】Template Literal Types'
+      title: 'バウアー'
     },
     {
-      title: 'Tailwind CSS でダークモード実装'
+      title: 'ダルビッシュ'
     },
   ]
 )
